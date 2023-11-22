@@ -15,7 +15,6 @@
   right: 2rem;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
   background-image: linear-gradient(130deg,#003c33, #013054 );
   display: flex;
   align-items: center;
@@ -26,9 +25,6 @@
 }
 
 .scrollTop:hover{
-  background-image: linear-gradient(130deg, #016455, #02487d);
-  border-color: #003c33;
-  border-radius: 10px;
-  transition: 1s linear;
-  color: #013054;
+  background-image: linear-gradient(130deg, #016455, #02487d);  
+  box-shadow: #003c33;
 }

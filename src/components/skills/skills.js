@@ -1,9 +1,10 @@
-import React from "react";
-import rec from "../../assets/React.png";
-import angular from "../../assets/angular.png";
-import spring from "../../assets/spring.png";
-
 import "./Skills.css";
+
+import React from "react";
+
+import angular from "../../assets/angular.png";
+import rec from "../../assets/React.png";
+import spring from "../../assets/spring.png";
 
 const Skills = () => {
   return (
@@ -17,7 +18,7 @@ const Skills = () => {
         projetos. Estou entusiasmado em aplicar essas habilidades e contribuir
         de forma significativa em um ambiente profissional.
       </span>
-      
+
       <div className="skillBars">
         <div className="skillBar">
           <img src={rec} alt="rec" className="skillBarImg" />

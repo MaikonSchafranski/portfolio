@@ -1,20 +1,20 @@
-import './contact.css';
+import "./contact.css";
 
-import emailjs from '@emailjs/browser';
-import React from 'react';
-import { useState } from 'react';
+import emailjs from "@emailjs/browser";
+import React from "react";
+import { useState } from "react";
 
-import github from '../../assets/25231.png';
-import angular from '../../assets/angular.png';
-import css from '../../assets/css-3.png';
-import facebook from '../../assets/facebook-colorido.png';
-import html from '../../assets/html.png';
-import spring from '../../assets/icons8-spring-boot-480.png';
-import instagram from '../../assets/instagram-colorido.png';
-import java from '../../assets/java.png';
-import javascript from '../../assets/js.png';
-import rec from '../../assets/React.png';
-import typeScript from '../../assets/typescript.png';
+import github from "../../assets/25231.png";
+import angular from "../../assets/angular.png";
+import css from "../../assets/css-3.png";
+import facebook from "../../assets/facebook-colorido.png";
+import html from "../../assets/html.png";
+import spring from "../../assets/icons8-spring-boot-480.png";
+import instagram from "../../assets/instagram-colorido.png";
+import java from "../../assets/java.png";
+import javascript from "../../assets/js.png";
+import rec from "../../assets/React.png";
+import typeScript from "../../assets/typescript.png";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -34,7 +34,12 @@ const Contact = () => {
     };
 
     emailjs
-      .send("service_onx2ktc", "template_6hf0zef", templateParams, "ZoGTFuutnAQTNWEjw")
+      .send(
+        "service_onx2ktc",
+        "template_6hf0zef",
+        templateParams,
+        "ZoGTFuutnAQTNWEjw"
+      )
       .then(
         (response) => {
           console.log("Email enviado", response.status, response.text);
@@ -97,7 +102,6 @@ const Contact = () => {
             Enviar
           </button>
         </form>
-    
 
         <div className="links">
           <a
